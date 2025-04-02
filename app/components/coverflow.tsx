@@ -9,32 +9,27 @@ import NextButton from "./nextButton";
 
 const photos = [
   {
-    imgScr: "/image1.png",
-    head: "zulaa1",
+    imgScr: "/image2.png",
+    title:
+      "Lorem ipsum dolor sit amet consectetur. Mauris sed nunc in duismassa ac justo cursus pulvinar.",
+  },
+  {
+    imgScr: "/image3.png",
     title:
       "Lorem ipsum dolor sit amet consectetur. Mauris sed nunc in duismassa ac justo cursus pulvinar.",
   },
   {
     imgScr: "/image1.png",
-    head: "zulaa2",
+    title:
+      "Lorem ipsum dolor sit amet consectetur. Mauris sed nunc in duismassa ac justo cursus pulvinar.",
+  },
+  {
+    imgScr: "/image2.png",
     title:
       "Lorem ipsum dolor sit amet consectetur. Mauris sed nunc in duismassa ac justo cursus pulvinar.",
   },
   {
     imgScr: "/image1.png",
-    head: "zulaa3",
-    title:
-      "Lorem ipsum dolor sit amet consectetur. Mauris sed nunc in duismassa ac justo cursus pulvinar.",
-  },
-  {
-    imgScr: "/image1.png",
-    head: "zulaa4",
-    title:
-      "Lorem ipsum dolor sit amet consectetur. Mauris sed nunc in duismassa ac justo cursus pulvinar.",
-  },
-  {
-    imgScr: "/image1.png",
-    head: "zulaa5",
     title:
       "Lorem ipsum dolor sit amet consectetur. Mauris sed nunc in duismassa ac justo cursus pulvinar.",
   },
@@ -70,6 +65,7 @@ export default function CoverFlow() {
             loop={true}
             spaceBetween={30}
             slidesPerView={5}
+            initialSlide={3}
             slideToClickedSlide
             centeredSlides={true}
             grabCursor={true}
@@ -83,9 +79,6 @@ export default function CoverFlow() {
               return (
                 <SwiperSlide key={index} style={{ marginRight: "0px" }}>
                   <img className="imageStyle" src={p.imgScr} alt="" />
-                  <div className="headTitle">
-                    <h1 className="">{p.head}</h1>
-                  </div>
                 </SwiperSlide>
               );
             })}

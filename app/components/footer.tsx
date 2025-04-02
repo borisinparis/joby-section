@@ -10,14 +10,14 @@ import VectorSvg from "@/public/vectorSvg";
 import VectorSvgLogo from "@/public/vectorSvgLogo";
 const footTitles = [
   { name: "Бүтээгдэхүүн үйлчилгээ", logo: <VectorSvgLogo /> },
-  { name: "Бүтээгдэхүүн үйлчилгээ", logo: <VectorSvgLogo /> },
-  { name: "Бүтээгдэхүүн үйлчилгээ", logo: <VectorSvgLogo /> },
-  { name: "Бүтээгдэхүүн үйлчилгээ", logo: <VectorSvgLogo /> },
-  { name: "Бүтээгдэхүүн үйлчилгээ", logo: <VectorSvgLogo /> },
-  { name: "Бүтээгдэхүүн үйлчилгээ", logo: <VectorSvgLogo /> },
-  { name: "Бүтээгдэхүүн үйлчилгээ", logo: <VectorSvgLogo /> },
-  { name: "Бүтээгдэхүүн үйлчилгээ", logo: <VectorSvgLogo /> },
-  { name: "Бүтээгдэхүүн үйлчилгээ", logo: <VectorSvgLogo /> },
+  { name: "Брэндүүд", logo: <VectorSvgLogo /> },
+  { name: "Хэрэглэх заавар ", logo: <VectorSvgLogo /> },
+  { name: "Ажлын байр ", logo: <VectorSvgLogo /> },
+  { name: "Хямдралын карт ", logo: <VectorSvgLogo /> },
+  { name: "Хамтран ажиллагаа", logo: <VectorSvgLogo /> },
+  { name: "Хэрэглэх заавар", logo: <VectorSvgLogo /> },
+  { name: "Түгээмэл асуултууд", logo: <VectorSvgLogo /> },
+  { name: "Үйлчилгээний нөхцөл", logo: <VectorSvgLogo /> },
 ];
 export const Footer = () => {
   const [value, setValue] = useState("");
@@ -52,15 +52,16 @@ export const Footer = () => {
       <div className="w-full mt-[10px] gap-20 flex items-center justify-between">
         <div className=" min-w-[651px] min-h-[130px] lg:mx-auto  grid grid-cols-3">
           {footTitles.map((el, index) => (
-            <div className="flex gap-[10px] items-center">
+            <div
+              key={index}
+              className="cursor-pointer relative z-10000 flex gap-[10px] items-center"
+            >
               <div>{el.logo}</div>
-              <p key={index} className="text-[90%] font-[400px]">
-                {el.name}
-              </p>
+              <p className="text-[90%] font-[400px]">{el.name}</p>
             </div>
           ))}
         </div>
-        <div className="m-auto">
+        <div className=" mt-5 m-auto">
           <img src="foot-img.png" alt="" />
           <img src="foot-img1.png" className="mt-[10px]" alt="" />
         </div>
