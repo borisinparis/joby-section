@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
       <div className=" relative w-screen h-screen">
-        <BackgroundSvg className="absolute inset-0 z-0" />
         <ClientSection />
+        <BackgroundSvg className=" inset-1 z-0 fixed" />
       </div>
     </>
   );

@@ -13,10 +13,14 @@ import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
 import "swiper/css/grid";
 import Footer from "@/app/components/footer";
+import StatisticClient from "../statistic/Statistic-client";
 
 export const ClientSection = () => {
   return (
     <div>
+      <div>
+        <StatisticClient />
+      </div>
       <CoverFlow />
       <Footer />
     </div>

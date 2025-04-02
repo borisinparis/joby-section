@@ -1,0 +1,23 @@
+{
+  "data": [
+    { "name": "Удирдах албан хаагч", "value": 60, "color": "#FF6384" },
+    { "name": "Гүйцэтгэх албан хаагч", "value": 50, "color": "#5E5AFF" },
+    { "name": "Туслах албан хаагч", "value": 10, "color": "#B0B3D6" }
+  ],
+  "genderData": [
+    { "name": "Эрэгтэй", "value": 72.5, "color": "#0088FE" },
+    { "name": "Эмэгтэй", "value": 50, "color": "#00C49F" },
+    { "name": "Бусад", "value": 7.5, "color": "#D3D3D3" }
+  ],
+  "uData": [4000, 3000, 2000, 2780, 1890, 2390, 3490],
+  "pData": [2400, 1398, 9800, 3908, 4800, 3800, 4300],
+  "xLabels": [
+    "Page A",
+    "Page B",
+    "Page C",
+    "Page D",
+    "Page E",
+    "Page F",
+    "Page G"
+  ]
+}
