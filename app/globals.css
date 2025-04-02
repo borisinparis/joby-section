@@ -17,8 +17,9 @@
 }
 .swiper-slide img {
   inset: 0;
-  filter: grayscale(70%);
-  width: 400px;
+  border-radius: 8px;
+  filter: grayscale(80%);
+  width: 106px;
   height: 500px;
 }
 .swiper {
@@ -39,7 +40,7 @@
 .swiper-slide-active img {
   filter: grayscale(0%);
   padding: unset;
-  width: 800px;
+  width: 700px;
 }
 .fade .swiper-button-next::after,
 .fade .swiper-button-prev::after {
@@ -61,7 +62,7 @@
   justify-content: space-between;
 }
 .swiper-slide-active {
-  width: 800px !important;
+  width: 700px !important;
 }
 .fade .swiper-button-prev::before {
   content: "<";
@@ -70,19 +71,19 @@
   content: ">";
 }
 .fade .swiper-button-next {
-  left: 1.5rem;
+  left: initial;
   width: 3rem;
   height: 3rem;
-  background-color: crimson;
-  right: initial;
+  background-color: indigo;
+  right: 6rem;
 }
 
 .fade .swiper-button-prev {
-  right: initial;
+  right: 1.5rem;
   width: 3rem;
   height: 3rem;
-  background-color: crimson;
-  left: 6rem;
+  background-color: indigo;
+  left: initial;
 }
 
 @media (max-width: 800px) {
