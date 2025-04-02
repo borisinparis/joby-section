@@ -47,43 +47,12 @@
   content: "";
 }
 
-.fade .swiper-button-prev,
-.fade .swiper-button-next {
-  position: absolute;
-  top: 40;
-  transform: translateY(-50%);
-  z-index: 10;
-  color: white;
-  padding: 0;
-}
-
 .swiper-wrapper {
   display: flex;
   justify-content: space-between;
 }
 .swiper-slide-active {
   width: 700px !important;
-}
-.fade .swiper-button-prev::before {
-  content: "<";
-}
-.fade .swiper-button-next::before {
-  content: ">";
-}
-.fade .swiper-button-next {
-  left: initial;
-  width: 3rem;
-  height: 3rem;
-  background-color: indigo;
-  right: 6rem;
-}
-
-.fade .swiper-button-prev {
-  right: 1.5rem;
-  width: 3rem;
-  height: 3rem;
-  background-color: indigo;
-  left: initial;
 }
 
 @media (max-width: 800px) {

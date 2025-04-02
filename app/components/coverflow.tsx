@@ -1,6 +1,11 @@
 import * as React from "react";
 
-import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+import {
+  EffectCoverflow,
+  Navigation,
+  Autoplay,
+  Pagination,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useRef } from "react";
 import { Swiper as SwiperType } from "swiper";
@@ -52,7 +57,7 @@ export default function CoverFlow() {
             </p>
           </div>
 
-          <div className="relative z-50">
+          <div className="relative z-50 right-[-100px] bottom-[-60px]">
             <PrevButton swiperRef={swiperRef} />
             <NextButton swiperRef={swiperRef} />
           </div>
@@ -60,11 +65,13 @@ export default function CoverFlow() {
         <div className=" lg:mx-auto max-w-6xl mx-[1.5rem] py-10">
           <Swiper
             onSwiper={(swiper: any) => (swiperRef.current = swiper)}
-            modules={[EffectCoverflow, Pagination, Navigation]}
+            modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
             effect={"coverflow,fade"}
             loop={true}
             spaceBetween={30}
+            // speed={5000}
             slidesPerView={5}
+            // autoplay={{ delay: 4000, disableOnInteraction: false }}
             initialSlide={3}
             slideToClickedSlide
             centeredSlides={true}
