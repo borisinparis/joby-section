@@ -9,15 +9,22 @@
     { "name": "Эмэгтэй", "value": 50, "color": "#00C49F" },
     { "name": "Бусад", "value": 7.5, "color": "#D3D3D3" }
   ],
+
+  "villageData": [
+    { "name": "Архангай", "value": 72.5, "color": "#FF7E79" },
+    { "name": "erdenet", "value": 50, "color": "#39E0CF" },
+    { "name": "darhan", "value": 5, "color": "#009EF7" },
+    { "name": "darhan", "value": 9, "color": "#E6ECF6" },
+    { "name": "Бусад", "value": 7.5, "color": "#7239EA" }
+  ],
   "uData": [4000, 3000, 2000, 2780, 1890, 2390, 3490],
-  "pData": [2400, 1398, 9800, 3908, 4800, 3800, 4300],
   "xLabels": [
-    "Page A",
-    "Page B",
-    "Page C",
-    "Page D",
-    "Page E",
-    "Page F",
-    "Page G"
+    "2000-07-05",
+    "2000-06-30",
+    "2000-06-25",
+    "2000-06-20",
+    "2000-06-15",
+    "2000-06-10",
+    "2000-06-05"
   ]
 }
